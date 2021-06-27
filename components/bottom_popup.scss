@@ -1,0 +1,42 @@
+.bottom-popup {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    & .popup-wrapper {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        min-width: 28rem;
+        max-width: 32rem;
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 0.825rem;
+        box-shadow: 0 0 .625rem 0 rgba($color: #253749, $alpha: 0.16);
+        background: $white;
+        
+
+        & .popup-message {
+            text-align: left;
+            flex-grow: 1;
+            
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        & .popup-action {
+            margin-left: .75rem;
+        }
+
+    }
+    
+
+}

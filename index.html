@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./main.css">
+    <title>Simple Dash</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <a href="#" class="sidebar-brand">
+                <img class="brand-img" src="./img/logo.svg"/>
+                SimpleDash
+            </a>
+
+            <nav class="sidebar-content">
+                <ul>
+                    <li>
+                        <a href="" class="active">
+                            <svg
+                                width="16"
+                                height="16"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                >
+                                <use xlink:href="./img/feather-sprite.svg#monitor"/>
+                            </svg>
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <svg
+                                width="16"
+                                height="16"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                >
+                                <use xlink:href="./img/feather-sprite.svg#users"/>
+                            </svg>
+                            Users
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <svg
+                                width="16"
+                                height="16"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                >
+                                <use xlink:href="./img/feather-sprite.svg#award"/>
+                            </svg>
+                            Programs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <svg
+                                width="16"
+                                height="16"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                >
+                                <use xlink:href="./img/feather-sprite.svg#book"/>
+                            </svg>
+                            Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <svg
+                                width="16"
+                                height="16"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                >
+                                <use xlink:href="./img/feather-sprite.svg#book-open"/>
+                            </svg>
+                            Lessons
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <svg
+                                width="16"
+                                height="16"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                >
+                                <use xlink:href="./img/feather-sprite.svg#tool"/>
+                            </svg>
+                            Tools
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="main">
+            <nav class="navbar navbar-expand-lg">
+                <form class="my-2 my-lg-0">
+                    <div class="input-group nav-search">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn" type="button">
+                            <svg
+                                width="18"
+                                height="18"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                >
+                                <use xlink:href="./img/feather-sprite.svg#search"/>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                </form>
+
+
+                <div class="nav-actions">
+                    <a href="" class="btn btn-nav" id="logout">
+                        <svg
+                            width="18"
+                            height="18"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <use xlink:href="./img/feather-sprite.svg#power"/>
+                        </svg>
+                    </a>
+                </div>
+              </nav>
+
+            
+            <div class="content">
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="card card-dashboard-fig">
+                            <div class="card-body">
+                                <div class="fig-wrapper">
+                                    <div class="fig">
+                                        <h3>521</h3>
+                                        <p>Users</p>
+                                    </div>
+
+                                    <div class="illus">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            >
+                                            <use xlink:href="./img/feather-sprite.svg#users"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-dashboard-fig">
+                            <div class="card-body">
+                                <div class="fig-wrapper">
+                                    <div class="fig">
+                                        <h3>10</h3>
+                                        <p>Programs</p>
+                                    </div>
+
+                                    <div class="illus illus-danger">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            >
+                                            <use xlink:href="./img/feather-sprite.svg#award"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-dashboard-fig">
+                            <div class="card-body">
+                                <div class="fig-wrapper">
+                                    <div class="fig">
+                                        <h3>26</h3>
+                                        <p>Courses</p>
+                                    </div>
+
+                                    <div class="illus illus-warning">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            >
+                                            <use xlink:href="./img/feather-sprite.svg#book"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-dashboard-fig">
+                            <div class="card-body">
+                                <div class="fig-wrapper">
+                                    <div class="fig">
+                                        <h3>68</h3>
+                                        <p>Lessons</p>
+                                    </div>
+
+                                    <div class="illus illus-success">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            >
+                                            <use xlink:href="./img/feather-sprite.svg#book-open"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Users</h5>
+
+                        <div>
+                            <a href="" class="btn btn-primary">
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    >
+                                    <use xlink:href="./img/feather-sprite.svg#plus"/>
+                                </svg>
+                                Create New User
+                            </a>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <th>ID</th>
+                            <th class="sortable sort-asc">Username</th>
+                            <th class="sortable sort-desc">Email</th>
+                            <th>Registered Date</th>
+                            <th>Actions</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="important">thuongnguyen</td>
+                                <td>thuong@thuong.com</td>
+                                <td>Today</td>
+                                <td class="table-actions">
+                                    <a href="">
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            >
+                                            <use xlink:href="./img/feather-sprite.svg#edit-2"/>
+                                        </svg>
+                                    </a>
+
+                                    <a href="">
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            >
+                                            <use xlink:href="./img/feather-sprite.svg#trash"/>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td class="important">thuongnguyen</td>
+                                <td>thuong@thuong.com</td>
+                                <td>Today</td>
+                                <td class="table-actions">
+                                    <a href="">
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            >
+                                            <use xlink:href="./img/feather-sprite.svg#edit-2"/>
+                                        </svg>
+                                    </a>
+
+                                    <a href="">
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            >
+                                            <use xlink:href="./img/feather-sprite.svg#trash"/>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td class="important">thuongnguyen</td>
+                                <td>thuong@thuong.com</td>
+                                <td>Today</td>
+                                <td class="table-actions">
+                                    <a href="">
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            >
+                                            <use xlink:href="./img/feather-sprite.svg#edit-2"/>
+                                        </svg>
+                                    </a>
+
+                                    <a href="">
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            >
+                                            <use xlink:href="./img/feather-sprite.svg#trash"/>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td class="important">thuongnguyen</td>
+                                <td>thuong@thuong.com</td>
+                                <td>Today</td>
+                                <td class="table-actions">
+                                    <a href="">
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            >
+                                            <use xlink:href="./img/feather-sprite.svg#edit-2"/>
+                                        </svg>
+                                    </a>
+
+                                    <a href="">
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            >
+                                            <use xlink:href="./img/feather-sprite.svg#trash"/>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td class="important">thuongnguyen</td>
+                                <td>thuong@thuong.com</td>
+                                <td>Today</td>
+                                <td class="table-actions">
+                                    <a href="">
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            >
+                                            <use xlink:href="./img/feather-sprite.svg#edit-2"/>
+                                        </svg>
+                                    </a>
+
+                                    <a href="">
+                                        <svg
+                                            width="16"
+                                            height="16"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            >
+                                            <use xlink:href="./img/feather-sprite.svg#trash"/>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h5>Create New User</h5>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <label for="">Username</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col form-group">
+                                    <label for="">Email</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <label for="">Password</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col form-group">
+                                    <label for="">Password Confirmation</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h5>Create New User</h5>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <label for="">Username</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col form-group">
+                                    <label for="">Email</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <label for="">Password</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col form-group">
+                                    <label for="">Password Confirmation</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h5>Create New User</h5>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <label for="">Username</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col form-group">
+                                    <label for="">Email</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <label for="">Password</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col form-group">
+                                    <label for="">Password Confirmation</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h5>Create New User</h5>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <label for="">Username</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col form-group">
+                                    <label for="">Email</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <label for="">Password</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col form-group">
+                                    <label for="">Password Confirmation</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="footer">
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="popup">
+        <div class="popup-overlay"></div>
+        <div class="popup-wrapper">
+            <div class="popup-content">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Popup Message</h5>
+
+                        <div>
+                            <a href="" class="btn btn-close">
+                                <svg
+                                    width="18"
+                                    height="18"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    >
+                                    <use xlink:href="./img/feather-sprite.svg#x"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        Hopefully this is a meaningful message and you can safely close this popup. Is this long enough to stay in 2 rows?
+                    </div>
+                    <div class="card-footer">
+                        <div class="actions">
+                            <a href="#" class="btn btn-primary pull-right">OK</a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 
+    <div class="bottom-popup">
+        <div class="popup-wrapper">
+            <div class="popup-message">
+                <p>Hello everyone</p>
+            </div>
+
+            <div class="popup-action">
+                <div class="loading">
+                    <div class="threedots threedots-large">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

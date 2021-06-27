@@ -1,0 +1,107 @@
+$dot-size: 12px;
+$dot-space: 10px;
+$dot-color: rgba(#3498db, 0.5);
+$animation-time: 0.6s;
+// $dot-color: #3498db;
+
+.loading {
+    display: flex;
+    flex-direction: row;
+}
+
+//==============================================================
+// THREE DOTS LOADING
+//==============================================================
+@mixin threedots-base($dot-size, $dot-space, $dot-color, $animation-time, $id) {
+    @if $dot-size != null && $dot-space != null {   
+        width: 3 * $dot-size + 2 * $dot-space;
+        height: $dot-size;
+    }
+
+    div {
+        position: absolute;
+
+        @if $dot-size != null {   
+            width: $dot-size;
+            height: $dot-size;
+        }
+
+        border-radius: 50%;
+
+        @if $dot-color != null {
+            background: $dot-color;
+        }
+
+        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+
+        &:nth-child(1) {
+            left: 0;
+            animation: threedots1-#{$id} $animation-time infinite;
+        }
+
+        &:nth-child(2) {
+            animation: threedots2-#{$id} $animation-time infinite;
+        }
+
+        &:nth-child(3) {
+            @if $dot-size != null && $dot-space != null {
+                left: $dot-size + $dot-space;
+            }
+
+            animation: threedots2-#{$id} $animation-time infinite;
+        }
+
+        &:nth-child(4) {
+            @if $dot-size != null && $dot-space != null {
+                left: ($dot-size + $dot-space) * 2;
+            }
+
+            animation: threedots3-#{$id} $animation-time infinite;
+        }
+    }
+
+    @keyframes threedots1-#{$id} {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    @keyframes threedots2-#{$id} {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            @if $dot-size != null && $dot-space != null {
+                transform: translate($dot-size + $dot-space, 0);
+            }
+        }
+    }
+    
+    @keyframes threedots3-#{$id} {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(0);
+        }
+    }
+    
+}
+
+.threedots {
+    display: flex;
+    position: relative;
+    @include threedots-base($dot-size, $dot-space, $dot-color, $animation-time, base);
+
+    &-large {
+        @include threedots-base($dot-size * 2, $dot-space, $dot-color, $animation-time, lg);
+    }
+}
+
+
+//==============================================================
+// THREE DOTS LOADING
+//==============================================================

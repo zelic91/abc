@@ -1,0 +1,130 @@
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    background: $body-bg;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    min-width: 16rem;
+    max-width: 16rem;
+    background-color: #1a2d3f;
+
+    &-brand {
+        display: block;
+        width: 100%;
+        color: $white;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.125rem;
+        padding: 1.25rem 1.25rem;
+        
+
+        &:hover {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
+    &-content {
+        color: rgba($body-color, 0.5);
+
+        ul {
+            padding: 0.5rem;
+            list-style-type: none;
+
+            li:not(:last-child) {
+                margin-bottom: 0.2rem;
+            }
+        }
+
+        a {
+            display: block;
+            color: rgba($white, 0.5);
+            text-decoration: none;
+            padding: 0.825rem 1.25rem;
+
+            &.active, &:hover {
+                color: $white;
+                background-color: rgba($white, 0.1);
+                border-radius: 0.5rem;
+            }
+            
+        }
+
+        svg {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .brand-img {
+        max-height: 1.5rem;
+        margin-right: 0.25rem;
+        margin-bottom: 0.1rem;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.content {
+    padding: 0.875rem 1.25rem;
+}
+
+.card-dashboard-fig {
+    padding: .825rem;
+
+    .fig-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fig {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        h3 {
+            font-weight: 400;
+            font-size: 2.4rem;
+        }
+
+        p {
+            font-size: 0.925rem;
+            color: rgba($body-color, 0.6);
+        }
+    }
+
+    .illus {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+        color: $primary;
+        background-color: rgba($primary, 0.2);
+        border-radius: 50%;
+
+        &-warning {
+            color: $warning;
+            background-color: rgba($warning, 0.2);
+        }
+
+        &-success {
+            color: $success;
+            background-color: rgba($success, 0.2);
+        }
+
+        &-danger {
+            color: $danger;
+            background-color: rgba($danger, 0.2);
+        }
+
+    }
+}

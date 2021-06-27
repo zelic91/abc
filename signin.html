@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Simple Dash</title>
+</head>
+<body>
+    <div class="wrapper-login">
+        <div class="card card-login">
+            <div class="card-body">
+                <h3 class="card-title mb-3">SimpleDash</h3>
+                <form action="">
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="actions">
+                        <button class="btn btn-primary" id="login">Login</button>
+                        <div class="fill"></div>
+                        <div class="loading">
+                            <div class="threedots threedots-large">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </form>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="message-block">
+        <div class="message-block-content">
+            <div class="card">
+                <div class="card-body">
+                    <p>This is a message. This is a message. This is a message. This is a message. This is a message. This is a message. This is a message. This is a message. This is a message. </p>
+                    <a href="#" class="action" id="close">
+                        <svg
+                            width="18"
+                            height="18"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <use xlink:href="./img/feather-sprite.svg#x"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
