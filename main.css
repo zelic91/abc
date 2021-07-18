@@ -9948,7 +9948,6 @@ h3 {
   display: flex;
   align-items: stretch;
   width: 100%;
-  background: #f7f9fc;
 }
 
 .sidebar {
@@ -10255,6 +10254,10 @@ h3 {
   margin-left: 0.75rem;
 }
 
+svg {
+  margin-bottom: 2px;
+}
+
 .navbar {
   background-color: #fff;
   padding: 0.875rem 1.25rem;
@@ -10262,6 +10265,54 @@ h3 {
 }
 .navbar a {
   color: #34495e;
+}
+
+.dark .navbar {
+  background-color: #13202d;
+}
+.dark .navbar a {
+  color: #e9ecf1;
+}
+.dark .card, .dark .card-header, .dark .card-body, .dark .card-footer {
+  color: #e9ecf1;
+  background-color: #1e354a;
+}
+.dark .nav-search .form-control {
+  background-color: #26425c;
+  border-color: #2d4f6e;
+}
+.dark .nav-search .btn {
+  color: #e9ecf1;
+  background-color: #26425c;
+}
+.dark .form-control {
+  color: #e9ecf1;
+  background-color: #26425c;
+  border-color: #2d4f6e;
+}
+.dark .form-control::placeholder {
+  color: #8c9bb6;
+}
+.dark .table thead th, .dark .table thead th.sortable {
+  color: #e9ecf1;
+  background-color: #2d4f6e;
+}
+.dark .table tbody td, .dark .table tbody td.important {
+  color: #e9ecf1;
+}
+.dark .table tbody tr:not(:first-child) td {
+  border-top: 1px solid #355b80;
+}
+.dark .table tbody td.table-actions a {
+  color: #8c9bb6;
+}
+.dark .fig p {
+  color: #8c9bb6;
+}
+
+body.dark {
+  color: #e9ecf1;
+  background-color: #172838;
 }
 
 .nav-search .form-control {

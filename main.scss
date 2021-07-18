@@ -4,14 +4,23 @@
 $font-family-sans-serif: "Poppins", -apple-system, system-ui, sans-serif;
 
 $grid-gutter-width: 20px;
-$body-color: #34495e;
+
 $font-size-base: 0.825rem;
-$body-bg: #f7f9fc;
 $primary: #3498db;
 $btn-box-shadow: none;
 $input-btn-focus-box-shadow: none;
 $table-border-color: rgba(#e8ebf0, 1);
 $paragraph-margin-bottom: 0;
+
+$sidebar-bg: #1a2d3f;
+
+// Light
+$body-color: #34495e;
+$body-bg: #f7f9fc;
+
+// Dark
+$body-dark-color: #e9ecf1;
+$body-dark-bg: adjust-color($color: $sidebar-bg, $lightness: -2%);
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 @import "./pages/signin.scss";
@@ -19,6 +28,10 @@ $paragraph-margin-bottom: 0;
 @import "./components/loading.scss";
 @import "./components/popup.scss";
 @import "./components/bottom_popup.scss";
+
+svg {
+    margin-bottom: 2px;
+}
 
 .navbar {
     background-color: $white;
@@ -28,6 +41,71 @@ $paragraph-margin-bottom: 0;
     a {
         color: $body-color;
     }
+}
+
+.dark {
+    .navbar {
+        background-color: adjust-color($color: $sidebar-bg, $lightness: -5%);
+
+        a {
+            color: $body-dark-color;
+        }
+    }
+
+    .card, .card-header, .card-body, .card-footer {
+        color: $body-dark-color;
+        background-color: adjust-color($color: $body-dark-bg, $lightness: 5%);
+    }
+
+    .nav-search {
+        .form-control {
+            background-color: adjust-color($color: $body-dark-bg, $lightness: 10%);
+            border-color: adjust-color($color: $body-dark-bg, $lightness: 15%);
+        }
+
+        .btn {
+            color: $body-dark-color;
+            background-color: adjust-color($color: $body-dark-bg, $lightness: 10%);
+        }
+    }
+
+    .form-control {
+        color: $body-dark-color;
+        background-color: adjust-color($color: $body-dark-bg, $lightness: 10%);
+        border-color: adjust-color($color: $body-dark-bg, $lightness: 15%);
+
+        &::placeholder {
+            color: adjust-color($color: $body-dark-color, $lightness: -30%);
+        }
+    }
+    
+    .table {
+        thead th, thead th.sortable {
+            color: $body-dark-color;
+            background-color: adjust-color($color: $body-dark-bg, $lightness: 15%);
+        }
+
+        tbody td, tbody td.important {
+            color: $body-dark-color;
+        }
+
+        tbody tr:not(:first-child) td {
+            border-top: 1px solid adjust-color($color: $body-dark-bg, $lightness: 20%);
+        }
+
+        tbody td.table-actions a {
+            color: adjust-color($color: $body-dark-color, $lightness: -30%);
+        }
+    }
+
+    .fig p {
+        color: adjust-color($color: $body-dark-color, $lightness: -30%);
+    }
+}
+
+body.dark {
+    color: $body-dark-color;
+    background-color: $body-dark-bg;
 }
 
 .nav-search {
