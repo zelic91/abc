@@ -13,7 +13,7 @@ $animation-time: 0.6s;
 // THREE DOTS LOADING
 //==============================================================
 @mixin threedots-base($dot-size, $dot-space, $dot-color, $animation-time, $id) {
-    @if $dot-size != null && $dot-space != null {   
+    @if $dot-size != null and $dot-space != null {   
         width: 3 * $dot-size + 2 * $dot-space;
         height: $dot-size;
     }
