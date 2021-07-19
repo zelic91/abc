@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,54 +8,33 @@
     <link rel="stylesheet" href="./landing.css">
     <title>Simple Landing</title>
 </head>
-<body>
-    <!-- <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container container-fixed">
-            <a class="navbar-brand" href="#">Vocab</a>
-        
-            <div class="collapse navbar-collapse justify-content-end">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Privacy Policy</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
+<body>
 
     <nav class="navbar navbar-expand-lg navbar-trans">
         <div class="container container-fixed">
             <a class="navbar-brand" href="#">vocab</a>
-        
+
             <div class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Privacy Policy</a>
+                        <a class="nav-link" href="/policy.html">Privacy Policy</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="hero" style="background: url(/img/learn.jpeg);">
+    <section class="hero" style="background: url(/img/learn.jpeg);background-size: cover;">
 
         <div class="hero-overlay">
-
         </div>
 
         <div class="container container-fixed">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Learn English faster</h1>
-                    <h3>with Vocab</h3>
+                    <h1 class="hero-title">Learn English faster</h1>
+                    <h3 class="hero-subtitle">with Vocab</h3>
 
                     <div class="ctas">
                         <a class="cta" href="/cta">
@@ -64,49 +44,117 @@
                         <a class="cta" href="/cta">
                             <img src="./img/appstore.svg" alt="">
                         </a>
-                        
-                        
                     </div>
-                    
+
                 </div>
 
                 <div class="hero-image">
-                    <img src="./img/sample_app.png" alt=""> 
+                    <img src="./img/sample_app.png" alt="">
                 </div>
             </div>
-            
-            
+
         </div>
 
-        
     </section>
 
     <section class="features">
 
         <div class="container container-fixed">
-            <h1 class="text-center">Our key features</h1>
+
+            <div class="row mt-2">
+                <div class="col">
+                    <div class="feature">
+                        <div class="feature-image feature-image-1">
+                            <svg width="30" height="30" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <use xlink:href="./img/feather-sprite.svg#monitor" />
+                            </svg>
+                        </div>
+
+                        <div class="feature-content">
+                            <h3 class="title">40+ topics</h3>
+                            <p class="subtitle">Common topics like Education, Environment ...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="feature">
+                        <div class="feature-image feature-image-2">
+                            <svg width="30" height="30" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <use xlink:href="./img/feather-sprite.svg#monitor" />
+                            </svg>
+                        </div>
+
+                        <div class="feature-content">
+                            <h3 class="title">1000+ words</h3>
+                            <p class="subtitle">Most commonly used words</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
             <div class="row mt-5">
-                <div class="col text-center">
-                    <h3>Fun</h3>
+                <div class="col">
+                    <div class="feature">
+                        <div class="feature-image feature-image-3">
+                            <svg width="30" height="30" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <use xlink:href="./img/feather-sprite.svg#monitor" />
+                            </svg>
+                        </div>
+
+                        <div class="feature-content">
+                            <h3 class="title">Practice Mode</h3>
+                            <p class="subtitle">Explore new words with light excercises</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col text-center">
-                    <h3>Fast</h3>
-                </div>
+                <div class="col">
+                    <div class="feature">
+                        <div class="feature-image feature-image-4">
+                            <svg width="30" height="30" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <use xlink:href="./img/feather-sprite.svg#monitor" />
+                            </svg>
+                        </div>
 
-                <div class="col text-center">
-                    <h3>Effortless</h3>
+                        <div class="feature-content">
+                            <h3 class="title">Test Mode</h3>
+                            <p class="subtitle">Review learnt words the challenging way</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        
+
     </section>
 
     <footer class="footer">
         <div class="container container-fixed">
-            <p>Vocab app</p>
+            <div class="row">
+                <div class="col-md-9 col-sm-12">
+                    <h5>vocab</h5>
+                    <p class="text-sub">Plain and simple step to your English mastery</p>
+                </div>
+
+                <div class="col-md-3 col-sm-12 ctas">
+                    <h6 class="text-sub">Free install on</h6>
+
+                    <a class="cta mt-3" href="/cta">
+                        <img src="./img/playstore.svg" alt="">
+                    </a>
+
+                    <a class="cta mt-2" href="/cta">
+                        <img src="./img/appstore.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
         </div>
     </footer>
 
@@ -114,4 +162,5 @@
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./main.js"></script>
 </body>
+
 </html>
